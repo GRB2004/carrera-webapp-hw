@@ -16,13 +16,22 @@ import { MatNativeDateModule } from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSidenavModule} from '@angular/material/sidenav';
 //Componentes
 import { RegistroScreenComponent } from './screens/registro-screen/registro-screen.component';
+import { HomeScreenComponent } from './screens/home-screen/home-screen.component';
+import { HeaderAppComponent } from './partials/header-app/header-app.component';
+import { LeftSidebarComponent } from './partials/left-sidebar/left-sidebar.component';
+import { JuegoTerminadoScreensComponent } from './screens/juego-terminado-screens/juego-terminado-screens.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginScreenComponent,
-    RegistroScreenComponent
+    RegistroScreenComponent,
+    HomeScreenComponent,
+    HeaderAppComponent,
+    LeftSidebarComponent,
+    JuegoTerminadoScreensComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +45,8 @@ import { RegistroScreenComponent } from './screens/registro-screen/registro-scre
     MatNativeDateModule,
     MatSelectModule,
     MatCheckboxModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
