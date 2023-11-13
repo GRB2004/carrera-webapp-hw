@@ -7,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LeftSidebarComponent implements OnInit {
 
-  public isLogin: boolean = false;
-  constructor(){}
+  public isLogin: boolean = true;
+
+  constructor() { }
 
   ngOnInit(): void {
-
   }
 
   public cerrar_drawer(){

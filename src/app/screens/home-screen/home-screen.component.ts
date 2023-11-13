@@ -1,18 +1,66 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home-screen',
   templateUrl: './home-screen.component.html',
   styleUrls: ['./home-screen.component.scss']
 })
-export class HomeScreenComponent {
+export class HomeScreenComponent implements OnInit {
 
-  constructor(){}
+  public name_user: string = "Luis Yael Méndez Sánchez";
+  public isLoading: boolean = false;
+  //Form dinámico de campos de texto
+  //public inputsCodigo : FormGroup;
+  public tiendas: any[] = [{value: "liverpool", nombre: "Liverpool"}, {value:"devlyn", nombre: "Ópticas Devlyn"}];
+  public selectedValue: string = "";
+
+  constructor(
+    private router: Router,
+    private fb: FormBuilder,
+  ) { }
 
   ngOnInit(): void {
-
+    //this.initInputsCodigo();
   }
+
+  initInputsCodigo(){
+    //this.inputsCodigo = this.fb.group({
+      //listaInputs: this.fb.array([this.fb.group({valor:'', extra: false})])
+    //
+
+    //for (let i = 0; i < 7; i++) {
+      //const control_1 = <FormArray>this.inputsCodigo.controls['listaInputs'];
+      //control_1.push(this.fb.group({valor:'', extra: false}));
+    //}
+  }
+
+  //get getCamposInputs(){
+    //return this.inputsCodigo.get('listaInputs') as FormArray;
+  //}
+
   public saberMas(){
 
   }
+
+  public isMobile(tipo: number): string {
+    switch(tipo){
+      case 1:
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(navigator.userAgent)){
+          return "style-mobile";
+        } else {
+          return "interior-codigos";
+        }
+      case 2:
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(navigator.userAgent)){
+          return "style-mobile";
+        } else {
+          return "interior-codigos-registrados";
+        }
+      default:
+        return "default-value"; // Valor por defecto en caso de que el tipo no sea 1 ni 2
+    }
+  }
+
 }
