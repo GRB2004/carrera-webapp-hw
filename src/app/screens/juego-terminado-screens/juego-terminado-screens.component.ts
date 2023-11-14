@@ -16,4 +16,12 @@ export class JuegoTerminadoScreensComponent implements OnInit {
   public goHome(){
     this.router.navigate(["home"]);
   }
+
+  public isMobile(){
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(navigator.userAgent)){
+      return true;
+    }else{
+      return false;
+    }
+  }
 }
