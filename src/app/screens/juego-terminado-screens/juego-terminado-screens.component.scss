@@ -1,101 +1,99 @@
 .wrapper{
   width: 100%;
   height: 100vh;
-  background-color:#FFFFFF;
+  background-color: #FFFFFF;
+}
 
-  }
+.body-juego{
+  width: 100%;
+  height: 90vh;
+  background-color: #FFFFFF;
+  overflow-y: scroll!important;
 
-  .body-juego{
-    width: 100%;
 
-    background-color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .border{
-    border-top: 1px solid #7A7A7A1F!important;
-    border-bottom: 1px solid #7A7A7A1F!important;
-
-  }
+}
 
 .section-title{
-
-  width: 100%;
+  border-top: 2px solid #7A7A7A1F!important;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 2rem;
-  margin-top: 2rem;
   width: 100%;
-  .title-link{
-    width: 228px;
-    height: 20px;;
-    //Fuente
-    text-align: left;
-    font-family: Avenir-Bold;
-    font-size: 20px;
-    letter-spacing: 0px;
-    color:rgb(10, 10, 10);
-    opacity: 1;
+  padding-top: 40px;
 
+  .title-link{
+  width: 228px;
+  height: 20px;;
+  //Fuente
+  text-align: left;
+  margin-left: 12px;
+  font-family: Avenir-Bold;
+  font-size: 20px;
+  letter-spacing: 0px;
+  color:rgb(10, 10, 10);
+  opacity: 1;
   }
 
   .line-color{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 5%;
   }
 
   .vertical-line{
-    width: 20%;
-    background-color: #CD0000;
-    height: 40px!important;
-    float:left;
+  margin-left: 12px;
+  width: 4px;
+  background-color: #CD0000;
+  height: 40px!important;
+  float:left;
   }
 }
 
-.Rectangulo{
+.section-puntaje{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  span {
+      display: block;
+      margin-bottom: 10px;
+  }
+}
+
+.rectangulo{
   width: 90px;
   height: 160px;
   justify-content: center;
   background-color: #CD0000;
-  display: flex;
   align-items: center;
-  flex-direction: column;
-  margin-left: 2rem;
-  margin-bottom: 1rem;
-
+  margin-top: 1rem;
 }
 
 .title-puntos{
-  margin-left: 2.5rem;
-  margin-top: 1rem;
-  justify-content: center;
+  margin-top: 2.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   font-family: Avenir-bold;
-  width: 90px;
+  width: 100%;
   height: 16px;
   color:#CD0000;
-
 }
 
 .puntaje{
-  margin-left: 2.5rem;
-  margin-top: 2rem;
+  margin-top: 40px;
   justify-content: center;
   font-family: Avenir-bold;
   width: 186px;
   color:#000000;
   font-size: 72px;
-
 }
 
 .footer-puntos{
-  margin-left: 2.5rem;
   margin-top: 2rem;
   justify-content: center;
   width: 186px;
@@ -103,56 +101,47 @@
   font-size: 24px;
   text-align: center;
   font-family: 'Avenir Next LT Pro', sans-serif;
-
 }
 
 .texto{
-  margin-left: 1rem;
-  margin-top: 1rem;
-  text-align: center;
+  margin-top: 3rem;
   width: 328px;
   opacity: 1;
   color:#000000;
-  font-size: 16px;
   text-align: center;
-  font-family: 'Avenir Next LT Pro', sans-serif;
-  span strong {
-    font-weight: bold;
-  }
-}
-
-.mat-flat-button{
-  background: #CD0000 0% 0% no-repeat padding-box;
+  font-family: Avenir;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #000000;
   opacity: 1;
-  width: 160px;
-  height: 40px;
-  border-radius: 0;
-  margin-left: 1rem;
-  //Fuente
-  .text-btn{
-      text-align: center;
-      font-family: 'Avenir Next LT Pro', sans-serif;
-      font-size: 16px;
-      letter-spacing: 0.8px;
-      color: #FFFFFF;
-      opacity: 1;
-      line-height: 40px; /* Ajusta la altura del texto verticalmente al tamaño del botón */
-
+  span strong {
+      font-weight: bold;
   }
+  margin-bottom: 15px;
 }
 
-.r-negro {
-  width: 360px;
-  height: 130px;
+.strong{
+  text-align: right;
+  font-family: Avenir-Bold;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
 
+.rec-black {
+  width: 100%;
+  height: 130px;
   background-color: #000000;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  margin-top: 69px;
+  padding-top: 10px;
+  margin-bottom: 10px;
 }
 
-.txt {
+.text {
   text-align: center;
   font-family: normal normal normal 12px/26px Avenir Next LT Pro;
   font-size: 12px;
@@ -161,199 +150,40 @@
   text-transform: uppercase;
 }
 
-span {
-  display: block;
-  margin-bottom: 10px;
-}
-
 .liston-img{
   width: 56px;
   height: 28px;
-  margin-left: 152px;
 }
 
-.footer{
+//Footer desktop
+.footer-desktop{
   width: 100%;
-  height: 10vh;
+  overflow-y: hidden!important;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
-  display: block;
-  margin-bottom: 10px;
 }
 
-.text-foot {
-  width: 100%;
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: normal 12px/26px Avenir Next LT Pro;
-  font-size: 10px;
-  letter-spacing: 0.5px;
-  color: #000000;
-  text-transform: uppercase;
-  text-align: center;
-  margin-left: 10px;
-}
-
-//Estilos para desktop
-.wrapper-desktop{
-  width: 100%;
-  height: 100vh;
-  background-color:#FFFFFF;
-
-}
-.section-title-desktop{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  //margin-left: 30rem;
-  margin-top: 2rem;
-
-  .title-link{
-    width: 228px;
-    height: 20px;;
-    //Fuente
-    text-align: left;
-    font-family: Avenir-Bold;
-    font-size: 20px;
-    letter-spacing: 0px;
-    color:rgb(10, 10, 10);
-    opacity: 1;
-
-  }
-
-  .line-color{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 5%;
-  }
-
-  .vertical-line{
-    width: 20%;
-    background-color: #CD0000;
-    height: 40px!important;
-    float:left;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-  }
-}
-
-.Rectangulo-desktop{
-  width: 90px;
-  height: 160px;
-  justify-content: center;
-  background-color: #CD0000;
-  margin-left: 40rem;
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-
-}
-
-.title-puntos-desktop{
-  margin-left: 40.5rem;
-  margin-top: 1rem;
-  justify-content: center;
-  font-family: Avenir-bold;
-  width: 90px;
-  height: 16px;
-  color:#CD0000;
-}
-
-.puntaje-desktop{
-  margin-left: 37rem;
-  margin-top: 2rem;
-  justify-content: center;
-  font-family: Avenir-bold;
-  width: 186px;
-  color:#000000;
-  font-size: 72px;
-}
-
-.footer-puntos-desktop{
-  margin-left: 37rem;
-  margin-top: 2rem;
-  justify-content: center;
-  width: 186px;
-  color:#000000;
-  font-size: 24px;
-  text-align: center;
-  font-family: 'Avenir Next LT Pro', sans-serif;
-}
-
-.texto-desktop{
-  margin-left: 33rem;
-  margin-top: 3rem;
-  text-align: center;
-  width: 328px;
+//Button
+.mdc-button {
+  background: #CD0000 0% 0% no-repeat padding-box;
   opacity: 1;
-  color:#000000;
-  font-size: 16px;
-  text-align: center;
-  font-family: 'Avenir Next LT Pro', sans-serif;
-  span strong {
-    font-weight: bold;
+  width: 188px;
+  height: 40px;
+  border-radius: 0;
+  //Fuente
+  .text-btn{
+      text-align: center;
+      font-family: Avenir;
+      font-size: 16px;
+      letter-spacing: 0.8px;
+      color: #FFFFFF;
+      opacity: 1;
   }
 }
 
-.r-negro-desktop {
-  width: 360px;
-  height: 130px;
-  margin-left: 32rem;
-  background-color: #000000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.liston-img-desktop{
-  width: 56px;
-  height: 28px;
-  margin-left: 42rem;
-}
-
-.text-foot-desktop {
-
-  margin-left: 14rem;
-  font-family: normal 12px/26px Avenir Next LT Pro;
-  font-size: 10px;
-  letter-spacing: 0.5px;
-  color: #000000;
-  text-transform: uppercase;
-  text-align: center;
-  white-space: nowrap; /* Evita el salto de línea automático */
-}
-
-.footer-text-cont{
-  width: 148px;
-  height: 10px;
-  margin-left: 32rem;
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-.body-juego-desktop{
-  width: 100%;
-  height: 90vh;
-  background-color: #FFFFFF;
-}
-
-.border-desktop{
-  border-top: 1px solid #7A7A7A1F!important;
-  border-bottom: 1px solid #7A7A7A1F!important;
-
+.mat-mdc-unelevated-button.mat-warn {
+  --mdc-filled-button-container-color: #CD0000;
+  --mdc-filled-button-label-text-color: #fff;
 }

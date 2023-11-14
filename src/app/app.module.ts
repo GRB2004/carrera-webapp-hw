@@ -25,6 +25,7 @@ import { HomeScreenComponent } from './screens/home-screen/home-screen.component
 import { HeaderAppComponent } from './partials/header-app/header-app.component';
 import { LeftSidebarComponent } from './partials/left-sidebar/left-sidebar.component';
 import { JuegoTerminadoScreensComponent } from './screens/juego-terminado-screens/juego-terminado-screens.component';
+import { FooterAppComponent } from './partials/footer-app/footer-app.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { JuegoTerminadoScreensComponent } from './screens/juego-terminado-screen
     HomeScreenComponent,
     HeaderAppComponent,
     LeftSidebarComponent,
-    JuegoTerminadoScreensComponent
+    JuegoTerminadoScreensComponent,
+    FooterAppComponent
   ],
   imports: [
     BrowserModule,

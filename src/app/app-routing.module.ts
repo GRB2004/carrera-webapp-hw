@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: 'registro', component: RegistroScreenComponent, pathMatch: 'full'},
   { path: 'home', component: HomeScreenComponent, pathMatch: 'full'},
   { path: 'juego-terminado', component: JuegoTerminadoScreensComponent, pathMatch: 'full'},
+
 ];
 
 @NgModule({
