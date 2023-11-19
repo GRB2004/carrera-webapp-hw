@@ -14,7 +14,6 @@ export class HeaderAppComponent implements OnInit {
   }
 
   drawerOpen(){
-    console.log("click");
     this.drawer.emit();
   }
 
