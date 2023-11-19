@@ -27,6 +27,8 @@ import { LeftSidebarComponent } from './partials/left-sidebar/left-sidebar.compo
 import { JuegoTerminadoScreensComponent } from './screens/juego-terminado-screens/juego-terminado-screens.component';
 import { FooterAppComponent } from './partials/footer-app/footer-app.component';
 import { BasesPromocionScreenComponent } from './screens/bases-promocion-screen/bases-promocion-screen.component';
+import { InstruccionesScreenComponent } from './screens/instrucciones-screen/instrucciones-screen.component';
+import { JuegoScreenComponent } from './screens/juego-screen/juego-screen.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +39,9 @@ import { BasesPromocionScreenComponent } from './screens/bases-promocion-screen/
     LeftSidebarComponent,
     JuegoTerminadoScreensComponent,
     FooterAppComponent,
-    BasesPromocionScreenComponent
+    BasesPromocionScreenComponent,
+    InstruccionesScreenComponent,
+    JuegoScreenComponent
   ],
   imports: [
     BrowserModule,

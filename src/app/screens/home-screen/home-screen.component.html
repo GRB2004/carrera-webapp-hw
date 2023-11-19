@@ -39,7 +39,7 @@
                           </form>
 
                           <!-- Select tiendas -->
-                          <mat-form-field appearance="outline" class="mt-3">
+                          <mat-form-field appearance="outline" class="mt-3" class="inputs-login">
                               <mat-label>Tienda de compra</mat-label>
                               <mat-select [(ngModel)]="participacion.tienda" name="tiendas" (selectionChange)="changeTienda($event)">
                                   <mat-option *ngFor="let tienda of tiendas" [value]="tienda.value">
@@ -73,7 +73,7 @@
                       <div class="codigos-registrados">
                           <div class="{{isMobile(2)}}">
                               <h3 class="title-codigos">CÓDIGOS REGISTRADOS</h3>
-                              <table class="table table-responsive" *ngIf="lista_codigos.length > 0; else sinCodigos">
+                              <table class="table table-responsive"  *ngIf="lista_codigos.length > 0; else sinCodigos">
                                   <thead class="head-table">
                                     <tr>
                                       <th scope="col" *ngIf="tiene_juegos_pendientes">Jugar</th>
