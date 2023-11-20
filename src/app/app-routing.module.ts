@@ -7,6 +7,7 @@ import { JuegoTerminadoScreensComponent } from './screens/juego-terminado-screen
 import { BasesPromocionScreenComponent } from './screens/bases-promocion-screen/bases-promocion-screen.component';
 import { InstruccionesScreenComponent } from './screens/instrucciones-screen/instrucciones-screen.component';
 import { JuegoScreenComponent } from './screens/juego-screen/juego-screen.component';
+import { JuegoDosScreenComponent } from './screens/juego-dos-screen/juego-dos-screen.component';
 const routes: Routes = [
   { path: '', component: LoginScreenComponent, pathMatch: 'full'},
   { path: 'registro', component: RegistroScreenComponent, pathMatch: 'full'},
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'bases-promocion', component: BasesPromocionScreenComponent, pathMatch: 'full'},
   { path: 'instrucciones', component: InstruccionesScreenComponent, pathMatch: 'full'},
   { path: 'juego', component:  JuegoScreenComponent, pathMatch: 'full'},
+  { path: 'juego-dos', component:  JuegoDosScreenComponent, pathMatch: 'full'},
 
 ];
 

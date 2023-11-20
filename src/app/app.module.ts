@@ -29,6 +29,7 @@ import { FooterAppComponent } from './partials/footer-app/footer-app.component';
 import { BasesPromocionScreenComponent } from './screens/bases-promocion-screen/bases-promocion-screen.component';
 import { InstruccionesScreenComponent } from './screens/instrucciones-screen/instrucciones-screen.component';
 import { JuegoScreenComponent } from './screens/juego-screen/juego-screen.component';
+import { JuegoDosScreenComponent } from './screens/juego-dos-screen/juego-dos-screen.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +42,8 @@ import { JuegoScreenComponent } from './screens/juego-screen/juego-screen.compon
     FooterAppComponent,
     BasesPromocionScreenComponent,
     InstruccionesScreenComponent,
-    JuegoScreenComponent
+    JuegoScreenComponent,
+    JuegoDosScreenComponent
   ],
   imports: [
     BrowserModule,
