@@ -30,6 +30,8 @@ import { BasesPromocionScreenComponent } from './screens/bases-promocion-screen/
 import { InstruccionesScreenComponent } from './screens/instrucciones-screen/instrucciones-screen.component';
 import { JuegoScreenComponent } from './screens/juego-screen/juego-screen.component';
 import { JuegoDosScreenComponent } from './screens/juego-dos-screen/juego-dos-screen.component';
+import { TerminosCondicionesScreenComponent } from './screens/terminos-condiciones-screen/terminos-condiciones-screen.component';
+import { AvisoDePrivacidadScreenComponent } from './screens/aviso-de-privacidad-screen/aviso-de-privacidad-screen.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +45,9 @@ import { JuegoDosScreenComponent } from './screens/juego-dos-screen/juego-dos-sc
     BasesPromocionScreenComponent,
     InstruccionesScreenComponent,
     JuegoScreenComponent,
-    JuegoDosScreenComponent
+    JuegoDosScreenComponent,
+    TerminosCondicionesScreenComponent,
+    AvisoDePrivacidadScreenComponent
   ],
   imports: [
     BrowserModule,
