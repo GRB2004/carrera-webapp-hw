@@ -32,6 +32,7 @@ import { JuegoScreenComponent } from './screens/juego-screen/juego-screen.compon
 import { JuegoDosScreenComponent } from './screens/juego-dos-screen/juego-dos-screen.component';
 import { TerminosCondicionesScreenComponent } from './screens/terminos-condiciones-screen/terminos-condiciones-screen.component';
 import { AvisoDePrivacidadScreenComponent } from './screens/aviso-de-privacidad-screen/aviso-de-privacidad-screen.component';
+import { PerfilScreenComponent } from './screens/perfil-screen/perfil-screen.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +48,8 @@ import { AvisoDePrivacidadScreenComponent } from './screens/aviso-de-privacidad-
     JuegoScreenComponent,
     JuegoDosScreenComponent,
     TerminosCondicionesScreenComponent,
-    AvisoDePrivacidadScreenComponent
+    AvisoDePrivacidadScreenComponent,
+    PerfilScreenComponent
   ],
   imports: [
     BrowserModule,

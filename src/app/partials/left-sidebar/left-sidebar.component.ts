@@ -31,11 +31,11 @@ export class LeftSidebarComponent implements OnInit {
   }
 
   public goTiendasParticipantes(){
-
+    window.location.href = "https://www.facebook.com/";
   }
 
   public goPerfil(){
-
+    this.router.navigate(["perfil"]);
   }
 
   public logout(){
