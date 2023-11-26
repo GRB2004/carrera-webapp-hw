@@ -13,6 +13,8 @@ export class HomeScreenComponent implements OnInit {
   public isLoading: boolean = false;
   //Form dinámico de campos de texto
   public inputsCodigo : FormGroup;
+  //MatSelect tiene una propiedad value y el otro es el que muestra el texto visible en la pantalla
+  //El value es el que se pasa a la base de datos
   public tiendas: any[] = [{value: "liverpool", nombre: "Liverpool"}, {value:"devlyn", nombre: "Ópticas Devlyn"}];
   public selectedValue: string = "";
   public participacion: any = {};
