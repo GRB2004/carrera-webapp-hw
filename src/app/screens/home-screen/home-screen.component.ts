@@ -33,6 +33,7 @@ export class HomeScreenComponent implements OnInit {
   }
 
   initInputsCodigo(){
+    //Inicializar un formgroup
     this.inputsCodigo = this.fb.group({
       listaInputs: this.fb.array([this.fb.group({valor:'', extra: false})])
     });

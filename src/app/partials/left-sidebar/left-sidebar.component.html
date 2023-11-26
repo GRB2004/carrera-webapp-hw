@@ -53,7 +53,7 @@
           </div>
       </div>
 
-      <div class="links" (click)="goPerfil()">
+      <div class="links" *ngIf="isLogin" (click)="goPerfil()">
         <div class="line-color">
             <div class="vertical-line" style="height: 111px;"></div>
         </div>
