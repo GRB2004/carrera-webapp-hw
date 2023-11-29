@@ -69,9 +69,15 @@
   padding-right: 10px;
   padding-left: 10px;
   text-align: left;
-  font-family: Avenir;
-  font-size: 16px;
+  font-family: Avenir ;
+  font-size: 14px;
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
 }
+
+.body-text{
+  margin-bottom: 70px;//Para que no se vea tan pegado el el cuepor del texto con el footer
+}
+
+
